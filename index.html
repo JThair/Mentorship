@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Primary SEO -->
+  <title>Mentorship & 1:1 Training | JT Hair Houston — Dry Cutting, Balayage, Color</title>
+  <meta name="description" content="Level up your craft with JT Hair mentorship. 1:1 hands-on training for dry cutting, balayage, foilayage, color corrections, consultation workflow, and client experience." />
+  <meta name="keywords" content="JT Hair mentorship, hairstylist education Houston, dry cutting class, balayage training, foilayage workshop, hair color mentorship, salon education" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="Mentorship & 1:1 Training | JT Hair Houston" />
+  <meta property="og:description" content="Hands-on mentoring for hairstylists: dry cutting, balayage, foilayage, consultation and client journey. Private and small group options." />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="JT Hair Salon" />
+  <meta property="og:image" content="https://i.imgur.com/WGdZJ6K.png" />
+  <meta property="og:image:alt" content="JT Hair mentorship — stylist demonstrating technique during 1:1 training" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mentorship & 1:1 Training | JT Hair Houston" />
+  <meta name="twitter:description" content="Private mentorship and education for hairstylists in Houston." />
+  <meta name="twitter:image" content="https://i.imgur.com/WGdZJ6K.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600..800&family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <!-- Optional: help browser fetch hero image sooner -->
+  <link rel="preload" as="image" href="https://i.imgur.com/WGdZJ6K.png" imagesrcset="https://i.imgur.com/WGdZJ6K.png 1200w" imagesizes="(max-width: 980px) 92vw, 980px">
+
+  <style>
+    :root{
+      --bg:#0b0b0b; --ink:#e9e9e9; --muted:#bdbdbd; --panel:#151515;
+      --line:rgba(255,255,255,0.12); --accent:#ffcc00; --glow:rgba(255,204,0,.25);
+      --radius-xl:22px; --radius:14px;
+      --shadow-1: 0 10px 30px rgba(0,0,0,.45); --shadow-2: 0 20px 50px rgba(0,0,0,.55);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; color:var(--ink);
+      font-family:"Montserrat",system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      line-height:1.75;
+      background:
+        radial-gradient(1200px 600px at 80% -10%, rgba(255,255,255,0.06), transparent 60%),
+        radial-gradient(900px 500px at 10% 110%, rgba(255,204,0,0.08), transparent 60%),
+        var(--bg);
+      -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+    }
+
+    /* ===== Sticky Top Menu (matches site) ===== */
+    .site-header{
+      position: sticky; top: 0; z-index: 1000;
+      background: rgba(0,0,0,0.65);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: saturate(140%) blur(6px);
+    }
+    .top-nav{
+      max-width: 1100px; margin: 0 auto; padding: 10px 16px;
+      display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 10px;
+    }
+    .nav-left,.nav-center,.nav-right{ display:flex; align-items:center; gap:14px; }
+    .nav-center{ justify-content:center; } .nav-right{ justify-content:flex-end; }
+    .btn-ghost,.nav-link{
+      color: #e9e9e9; text-decoration:none; font-weight:700;
+      padding:8px 12px; border-radius:10px; letter-spacing:.3px;
+    }
+    .btn-ghost{
+      border:1px solid var(--line); background:rgba(255,255,255,0.02);
+      transition: background .2s, border-color .2s, transform .15s;
+      white-space:nowrap;
+    }
+    .btn-ghost:hover{ background:rgba(255,255,255,0.06); border-color:rgba(255,255,255,0.22); transform:translateY(-1px); }
+    .nav-list{ display:flex; align-items:center; gap:16px; list-style:none; padding:0; margin:0; }
+    .nav-link:hover{ background: rgba(255,255,255,0.06); }
+
+    .dropdown{ position:relative; }
+    .dropdown-toggle{
+      background:transparent; border:1px solid var(--line); color:#e9e9e9;
+      font-weight:700; padding:8px 12px; border-radius:10px; cursor:default;
+    }
+    .dropdown-toggle:hover{ background:rgba(255,255,255,0.06); border-color:rgba(255,255,255,0.22); }
+    .dropdown-menu{
+      position:absolute; top:100%; left:0; min-width:220px; padding:8px;
+      background:#111; border:1px solid var(--line); border-radius:12px;
+      box-shadow:0 12px 28px rgba(0,0,0,.35); display:none; z-index:1001;
+    }
+    .dropdown:hover .dropdown-menu, .dropdown:focus-within .dropdown-menu{ display:block; }
+    .dropdown-menu a{ display:block; padding:10px 12px; color:#e9e9e9; text-decoration:none; border-radius:10px; font-weight:600; }
+    .dropdown-menu a:hover{ background:rgba(255,255,255,0.06); }
+    @media (max-width: 720px){ .dropdown-menu{ left:50%; transform:translateX(-50%); min-width:260px; } }
+
+    /* ===== Page container ===== */
+    .wrap{ max-width: 980px; margin: 40px auto 80px; padding: 0 22px; }
+
+    /* Brand header */
+    header.site{
+      position: relative; margin: 0 0 28px; padding: 22px;
+      border: 1px solid var(--line); border-radius: var(--radius-xl);
+      background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+      box-shadow: var(--shadow-1), inset 0 1px 0 rgba(255,255,255,0.06);
+      backdrop-filter: blur(6px) saturate(130%);
+      text-align:center;
+    }
+    .brand{ display:flex; align-items:center; gap:16px; justify-content:center; text-align:center; }
+    .mark{
+      width:52px; height:52px; border-radius:14px;
+      background: linear-gradient(135deg, rgba(255,204,0,.24), rgba(255,255,255,.05));
+      border:1px solid var(--line);
+      box-shadow: 0 8px 24px var(--glow), inset 0 1px 0 rgba(255,255,255,.18);
+      display:flex; align-items:center; justify-content:center; font-weight:900; color:#111;
+    }
+    .mark span{ background:var(--accent); padding:6px 10px; border-radius:10px; font-weight:900; letter-spacing:.5px; }
+    .titles{ line-height:1.2; }
+    .logo{
+      margin:0; font-family:"Playfair Display", serif; font-size: clamp(32px, 5vw, 46px);
+      font-weight:800; letter-spacing:.3px; text-shadow: 0 0 18px rgba(255,255,255,.06);
+    }
+    .slogan{ margin:6px 0 0; color:var(--muted); font-style: italic; letter-spacing:.2px; }
+
+    /* Hero / intro */
+    .hero-card{
+      margin: 22px 0 26px; border:1px solid var(--line); border-radius: 22px;
+      background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.015));
+      box-shadow: var(--shadow-2), inset 0 1px 0 rgba(255,255,255,.05);
+      padding: clamp(18px, 3vw, 28px); text-align:center;
+    }
+
+    /* Added: hero image styling */
+    .hero-media{
+      margin: 2px auto 16px;
+      max-width: 920px;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      box-shadow: 0 14px 36px rgba(0,0,0,.5), inset 0 1px 0 rgba(255,255,255,.05);
+    }
+    .hero-media img{
+      display:block; width:100%; height:auto;
+    }
+
+    .page-title{ margin:10px 0 8px; font-family:"Playfair Display", serif; font-weight:800; font-size: clamp(24px, 4vw, 36px); }
+    .sub{ margin:0; color:var(--muted); font-size: 1rem; }
+
+    /* Grid cards */
+    .grid{ display:grid; grid-template-columns: repeat(12, 1fr); gap:18px; }
+    .card{
+      grid-column: span 12; border:1px solid var(--line); background: var(--panel);
+      border-radius: var(--radius); box-shadow: var(--shadow-1), inset 0 1px 0 rgba(255,255,255,.04);
+      padding: clamp(18px, 2.6vw, 26px);
+    }
+    .card h2{
+      display:flex; align-items:center; gap:12px; margin:0 0 12px;
+      font-size: clamp(18px, 2.4vw, 22px); font-weight:800; letter-spacing:.2px; color: var(--accent);
+    }
+    .icon{ font-size:24px; min-width:24px; text-align:center; }
+    .card p{ margin: 0 0 12px; color:#d3d3d3; }
+    .list{ margin:0; padding-left:1.1rem; color:#dcdcdc; }
+    .list li{ margin:6px 0; }
+
+    /* Tier cards */
+    .tiers{ display:grid; grid-template-columns: repeat(12, 1fr); gap:18px; }
+    .tier{ grid-column: span 12; border:1px solid var(--line); background:linear-gradient(180deg, rgba(255,255,255,.035), rgba(255,255,255,.02)); border-radius:16px; padding:18px; box-shadow:var(--shadow-1); }
+    .tier h3{ margin:0 0 6px; font-weight:800; }
+    .tag{ display:inline-block; background:var(--accent); color:#111; font-weight:900; padding:6px 10px; border-radius:10px; box-shadow: 0 8px 20px var(--glow); }
+
+    @media (min-width: 860px){
+      .tier.span-4{ grid-column: span 4; }
+      .card.span-6{ grid-column: span 6; }
+    }
+
+    /* CTA bar */
+    .cta-bar{
+      margin-top: 8px;
+      display:flex; gap:10px; flex-wrap:wrap;
+      justify-content:center;
+    }
+    .cta{
+      display:inline-flex; align-items:center; justify-content:center;
+      text-decoration:none; font-weight:900; letter-spacing:.2px;
+      padding:12px 14px; border-radius:12px; transition: transform .15s, box-shadow .2s, filter .2s;
+    }
+    .cta.primary{ background: var(--accent); color:#111; box-shadow: 0 10px 24px var(--glow); }
+    .cta.ghost{ border:1px solid var(--line); color:#e9e9e9; background:rgba(255,255,255,.05); }
+    .cta:hover{ transform: translateY(-1px); filter: brightness(1.03); }
+    .cta.primary:hover{ box-shadow: 0 16px 32px var(--glow); }
+
+    .divider{ height:1px; background:var(--line); margin: 12px 0 4px; opacity:.8; }
+
+    .visitor{ margin: 30px auto 0; text-align:center; color:#a3a3a3; font-style:italic; font-size:14px; }
+  </style>
+</head>
+<body>
+
+  <!-- Sticky Top Menu -->
+  <header class="site-header">
+    <nav class="top-nav">
+      <div class="nav-left">
+        <a class="btn-ghost" href="https://jthair.art/">← Back to Main Page</a>
+      </div>
+      <div class="nav-center">
+        <ul class="nav-list">
+          <li class="dropdown">
+            <button class="dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false">Services ▾</button>
+            <div class="dropdown-menu" role="menu">
+              <a href="https://jthair.github.io/Balayage/">Balayage</a>
+              <a href="https://jthair.github.io/Foilayage/">Foilayage</a>
+              <a href="https://jthair.github.io/Art-Of-Dry-Cutting/">Dry Cutting</a>
+            </div>
+          </li>
+          <li><a class="nav-link" href="https://jthair.github.io/Deals/">Deals</a></li>
+          <li><a class="nav-link" href="https://jthair.github.io/Deals/">Referrals</a></li>
+        </ul>
+      </div>
+      <div class="nav-right"></div>
+    </nav>
+  </header>
+
+  <div class="wrap">
+
+    <!-- Brand header -->
+    <header class="site" role="banner">
+      <div class="brand" aria-label="JT Hair brand">
+        <div class="mark" aria-hidden="true"><span>JT</span></div>
+        <div class="titles">
+          <h1 class="logo">JT Hair</h1>
+          <p class="slogan">Beauty Is In The Trust</p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero-card" role="region" aria-labelledby="page-title">
+      <!-- Added image block -->
+      <figure class="hero-media">
+        <img src="https://i.imgur.com/WGdZJ6K.png"
+             alt="JT Hair mentorship — hands-on training session in salon"
+             loading="eager" fetchpriority="high" />
+      </figure>
+
+      <h1 id="page-title" class="page-title">Mentorship & 1:1 Training</h1>
+      <p class="sub">Hands-on education tailored to your craft — dry cutting, balayage, foilayage, color strategy, consultation, and client experience.</p>
+      <div class="cta-bar" aria-label="Mentorship actions">
+        <a class="cta primary" href="mailto:Johnny.Thai.Hair@Gmail.com?subject=JT%20Hair%20Mentorship%20Inquiry">✉️ Apply via Email</a>
+        <a class="cta ghost" href="tel:8328606584">📞 832-860-6584</a>
+      </div>
+    </section>
+
+    <!-- Who it's for / Outcomes -->
+    <div class="grid" role="main">
+      <section class="card span-6" aria-labelledby="whoTitle">
+        <h2 id="whoTitle"><span class="icon">🎯</span>Who It’s For</h2>
+        <ul class="list">
+          <li>Stylists who want **precision dry cutting** flow and balance</li>
+          <li>Colorists aiming for **lived-in** balayage/foilayage with dimension</li>
+          <li>New pros building a **consultation system** that earns trust</li>
+          <li>Experienced artists refining **speed, consistency, pricing**</li>
+        </ul>
+      </section>
+
+      <section class="card span-6" aria-labelledby="outcomeTitle">
+        <h2 id="outcomeTitle"><span class="icon">🏆</span>What You’ll Gain</h2>
+        <ul class="list">
+          <li>JT’s dry cutting mapping for **shape, weight & movement**</li>
+          <li>Strategic placement for **multi-tone dimension** that grows out clean</li>
+          <li>High-impact toning, gloss timing, and **photo-ready finish**</li>
+          <li>Consult → Quote → Close: **clear client journey** that feels premium</li>
+        </ul>
+      </section>
+
+      <!-- Curriculum -->
+      <section class="card" aria-labelledby="currTitle">
+        <h2 id="currTitle"><span class="icon">📚</span>Curriculum Overview</h2>
+        <ul class="list">
+          <li>Dry Cutting Foundations: sectioning logic, face-framing flow, interior weight removal</li>
+          <li>Balayage vs. Foilayage: when to choose which, hybrid placement, tip-outs</li>
+          <li>Color Theory Applied: undertone control, lift prediction, toning pathways</li>
+          <li>Consultation System: expectation setting, visual language, aftercare scripts</li>
+          <li>Shot to Share: styling, lighting, and capturing work for your portfolio</li>
+        </ul>
+      </section>
+
+      <!-- Tiers / Packages -->
+      <section class="card" aria-labelledby="tiersTitle">
+        <h2 id="tiersTitle"><span class="icon">💼</span>Mentorship Formats</h2>
+
+        <div class="tiers">
+          <div class="tier span-4">
+            <h3>Look & Learn (Half Day)</h3>
+            <p>Demo-focused session with Q&A and workflow breakdowns.</p>
+            <span class="tag">Private / Small Group</span>
+          </div>
+
+          <div class="tier span-4">
+            <h3>Hands-On Intensive (Full Day)</h3>
+            <p>Model-based training with guided placement and cut refinement.</p>
+            <span class="tag">1:1 or Pair</span>
+          </div>
+
+          <div class="tier span-4">
+            <h3>3-Week Mentorship</h3>
+            <p>Weekly check-ins, assignments, case reviews, and portfolio feedback.</p>
+            <span class="tag">Cohort or 1:1</span>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+        <div class="cta-bar">
+          <a class="cta primary" href="mailto:Johnny.Thai.Hair@Gmail.com?subject=JT%20Hair%20Mentorship%20Inquiry&body=Name%3A%0AExperience%20Level%3A%0AGoals%3A%0APreferred%20Format%3A%0ATimeline%3A%0A">✉️ Apply for Mentorship</a>
+          <a class="cta ghost" href="tel:8328606584">📞 Call 832-860-6584</a>
+        </div>
+      </section>
+
+      <!-- How it works -->
+      <section class="card" aria-labelledby="howTitle">
+        <h2 id="howTitle"><span class="icon">🛠️</span>How It Works</h2>
+        <ul class="list">
+          <li>Email or call to choose your format and dates</li>
+          <li>We align on models or mannequins (for hands-on)</li>
+          <li>Customized agenda based on your goals and pace</li>
+          <li>Take-home references and technique checklists</li>
+        </ul>
+      </section>
+
+      <!-- FAQ -->
+      <section class="card" id="faq" aria-labelledby="faqTitle">
+        <h2 id="faqTitle"><span class="icon">❓</span>FAQ</h2>
+        <p><strong>Do I need to bring a model?</strong> For hands-on days, model is ideal; mannequin is fine for fundamentals.</p>
+        <p><strong>Can we focus only on dry cutting?</strong> Yes — the day is tailored. You can choose cut, color, or both.</p>
+        <p><strong>Do you travel for education?</strong> Regional travel can be arranged. Email details for a quote.</p>
+      </section>
+
+      <!-- Contact -->
+      <section class="card" aria-labelledby="contactTitle">
+        <h2 id="contactTitle"><span class="icon">📞</span>Contact</h2>
+        <p><strong>Phone:</strong> <a href="tel:8328606584">832-860-6584</a></p>
+        <p><strong>Email:</strong> <a href="mailto:Johnny.Thai.Hair@Gmail.com">Johnny.Thai.Hair@Gmail.com</a></p>
+        <div class="cta-bar">
+          <a class="cta primary" href="mailto:Johnny.Thai.Hair@Gmail.com?subject=JT%20Hair%20Mentorship%20Inquiry">✉️ Start Your Application</a>
+        </div>
+      </section>
+    </div>
+
+    <div class="visitor" aria-live="polite">
+      You’re viewing the Mentorship page of JT Hair.
+    </div>
+  </div>
+
+  <!-- JSON-LD: Service + FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Service",
+    "name":"JT Hair Mentorship & 1:1 Training",
+    "serviceType":"Hairstylist Education",
+    "provider":{"@type":"HairSalon","name":"JT Hair Salon","areaServed":"Houston, TX","url":"https://jthair.art/"},
+    "description":"Private and small group education covering dry cutting, balayage, foilayage, color strategy, consultation workflow, and client experience.",
+    "areaServed":"Houston, Texas",
+    "url":"https://jthair.art/",
+    "brand":{"@type":"Brand","name":"JT Hair"}
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"Do I need to bring a model?","acceptedAnswer":{"@type":"Answer","text":"For hands-on days a live model is ideal, but mannequins are fine for fundamentals."}},
+      {"@type":"Question","name":"Can we focus only on dry cutting?","acceptedAnswer":{"@type":"Answer","text":"Yes. Your day is tailored—choose cut, color, or both."}},
+      {"@type":"Question","name":"Do you travel for education?","acceptedAnswer":{"@type":"Answer","text":"Regional travel can be arranged. Email your details for a quote."}}
+    ]
+  }
+  </script>
+</body>
+</html>
